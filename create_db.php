@@ -1,10 +1,10 @@
 <?php
 	echo "<br />Creating db now....";
 
-   $dbhost="";
-   $dbuser="";
-   $dbpass="";
-   $dbname="";	
+   $dbhost="den1.mysql2.gear.host";
+   $dbuser="webtechdb";
+   $dbpass="webtechdb!";
+   $dbname="webtechdb";	
 
    $db = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

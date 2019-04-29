@@ -45,10 +45,10 @@
    //$jwtSecretKey = "jwt_secret_key";
 
    function getDatabase() {
-      $dbhost="";
-      $dbuser="";
-      $dbpass="";
-      $dbname="";
+      $dbhost="den1.mysql2.gear.host";
+      $dbuser="webtechdb";
+      $dbpass="webtechdb!";
+      $dbname="webtechdb";
 
       $db = new Database($dbhost, $dbuser, $dbpass, $dbname);
       return $db;
