@@ -13,7 +13,7 @@
 
 
    try {
-		$sql_create_contacts_tbl = <<<EOSQL
+		$sql_create_contacts_tbl = 
 			CREATE TABLE IF NOT EXISTS contacts (
 			  id int(11) NOT NULL AUTO_INCREMENT,
 			  name varchar(150) NOT NULL,
@@ -41,7 +41,7 @@
    }
 
    try {
-		$sql_create_users_tbl = <<<EOSQL
+		$sql_create_users_tbl = 
 			CREATE TABLE IF NOT EXISTS users (
 			  id int(11) NOT NULL AUTO_INCREMENT,
 			  login varchar(50) NOT NULL,
@@ -69,7 +69,7 @@
    }
 
    try {
-		$sql_insert_user_into_users = <<<EOSQL
+		$sql_insert_user_into_users = 
 			INSERT INTO users (login, password, name, email, mobileno, photo, addeddate) VALUES ('baba', 'b42a6d93d7969152e0f18f0e41c0f4f2bc9625f06c43dcbc22f6ffb2ffdd6137d93c1cdbb16', 'ali', 'ali@gmail.com', '0123456789', 'default.png', NOW());
 		EOSQL;
 
@@ -84,7 +84,8 @@
    catch(PDOException $e) {
       $errorMessage = $e->getMessage();
       echo "<br />$errorMessage";
-   } 
+	 }
+ 
 
      
 
